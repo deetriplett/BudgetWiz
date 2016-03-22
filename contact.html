@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>budgetWIZ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+  var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function() {
+    if(xhr.readyState === 4 && xhr.status === 200) {
+      document.getElementById('ajax').innerHTML = xhr.responseText;
+    }
+  };
+  xhr.open('GET', 'form.html');
+  function sendAJAX () {
+      xhr.send();
+      document.getElementById('load').style.display="none";
+  }
+  </script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-custom"><!--NAVIGATION--->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <span>  <img src="budget-logo2.png" alt="budgetWIZ" class="img-responsive"> </span>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="index2.html">WIZQuiz</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid  jumbotron text-center">
+        <h1> The Alchemist is in!</h1>
+      </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 banner">
+          <h2>The Great Oracle loves to chat</h2>
+          </div>
+        </div> <!--End Row-->
+      </div> <!--End Container-->
+
+    <div class="container-fluid">
+      <div class="row"><!--Contact Button>>Form>>Flickr Wizard Photo-->
+        <div class="col-lg-6">
+          <button id="load" onclick="sendAJAX();" type="submit" >Contact us, any day, any time!</button>
+          <div id="ajax" class="contact-form"></div>
+        </div>
+          <div id="photos">
+          <script type="text/javascript">jQuery(document).ready(function($){$getJSON();})</script>
+        </div>
+
+        <div class="container-fluid col-lg-4">
+          <section class="subscribe">
+          <div class="subscribe-pitch">
+            <form action="" id="NewsletterSubscription100" method="post" onsubmit="return ValidateForm(this);">
+            <h3>Sign Up for our Newsletter!</h3>
+            <p>We have lots of thoughts about budgeting. Get the latest scoop right to your inbox.<p>
+              </div>
+            <form action="#" method="post" class="subscribe-form">
+            <input type="email" name="email" class="subscribe-input" placeholder="Email address" autofocus>
+            <button type="submit" class="subscribe-submit">Subscribe</button>
+              </form>
+            </form><!--End Form-->
+          </section>
+        </div>
+      </div><!--End Row-->
+    </div><!--End Container-->
+      <br>
+    <div class="container">
+        <ul id="contact-list">
+          <a href= "https://www.facebook.com/budgetWIZ/timeline"><i class="fa fa-facebook-official"></i></a>
+          <a href= 'https://twitter.com/budgetWIZ'><i class="fa fa-twitter-square"></i></a>
+          <a href="mailto:wizardbudget411@gmail.com?Subject=Yo%20Wiz!"><i class="fa fa-envelope"></i></a>
+        </ul>
+      </div><!--End Container-->
+
+<!--Script Tags-->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://api.flickr.com/services/feeds/photos_public.gne">
+  <script src="newsletter.js"></script>
+  <script src="flickr.js"></script>
+</body>
+</html>

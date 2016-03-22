@@ -1,0 +1,141 @@
+/*****BASE STYLES AND INDEX PAGE*****/
+/*****NAVIGATION*****/
+.nav li {
+  color: #69D2E7;
+  margin-top: 35px;
+  font-size: 2em;
+}
+ul li {
+    list-style-type: none;
+}
+/*****JUMBOTRON*****/
+.jumbotron {
+    color: #fff;
+    padding: 0.5em 0.6em;
+    background-color: #69d2e7;
+    h1 {
+        font-size: 2em;
+    }
+  }
+.jumbotron.text-center {
+    text-shadow: 1px 1px 2px #000;
+}
+/*INDEX*/
+#container {
+  display: none;
+}
+/*.dataChange {
+  display: none;
+}
+*/
+div.question {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    background-color: #F38630;
+    padding-bottom: 10px;
+    border-radius: 7px;
+}
+div.question button {/*Submit button*/
+    display: block;
+    margin: auto;
+    background-color: #69D2E7;
+    border-radius: 2px;
+
+}
+#income {/*Income Input*/
+    color: #000;
+    margin-bottom: 1em;
+}
+div.question p {/*What is your monthly income?*/
+    margin-top: 1em;
+    background: #000;
+    border-radius: 5px;
+}
+/*************************************************/
+/*****ABOUT PAGE*****/
+#about-content bold {
+    font-size: 1.5em;
+}
+div.container.col-md-4 blockquote h2 {
+    background-color: #E0E4CC;
+    border-radius: 4px;
+    padding: 10px;
+}
+div.container.col-md-12 h3 { /*Check out the WIZQUIZ*/
+    margin: auto 0;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    background: #F38630;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+div.container.col-md-12 h3 a {/*WizQuiz link*/
+    text-decoration: none;
+}
+/*******************************/
+/*CONTACT PAGE*/
+.banner {
+    text-align: center;
+    background-color: #e0e4cc;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+    border-radius: 5px;
+}
+.banner h2 {
+    font-size: 3.1em;
+    letter-spacing: 3px;
+}
+#load {/*Contact Us button*/
+    margin-top: 15%;
+    margin-left: 15%;
+    font-size: 1.9em;
+    border-radius: 2px;
+}
+
+i.fa.fa-facebook-official,
+i.fa.fa-twitter-square,
+i.fa.fa-envelope  {
+    font-size: 3em;
+    padding: 7px;
+    margin: 5px;
+}
+#contact-list { /*Social media icons*/
+    text-align: center;
+}
+div.col-lg-4 { /*Line Decoration for column separation*/
+    margin: 10px;
+    padding: 2em;
+    border-left: #E0E4CC solid;
+}
+
+/*************************************/
+
+
+/*CONTACT FORM*/
+#contact-form {
+    background-color: #E0E4CC;
+    color: #000;
+    border-radius: 5px;
+}
+
+
+div.form-group {
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+div.form-group input {
+    margin: auto 0;
+    float: right;
+    color: #000;
+}
+/**MEDIA QUERIES**/
+@media (max-width: 767px) {
+ul.nav.navbar-nav {
+  text-align: center;
+  margin: 0;
+  padding: 0;}

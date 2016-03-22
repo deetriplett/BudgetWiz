@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>budgetWIZ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body  ng-app="listApp" >
+    <nav class="navbar navbar-inverse"><!--NAVIGATION--->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <span>  <img src="budget-logo2.png" alt="budgetWIZ" class="img-responsive"> </span>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="index2.html">WIZQuiz</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid jumbotron text-center"><!--HEADER--->
+      <h1>Abracadabra!</h1>
+      <h2>Making a budget is hard. Let me make one for you!</h2>
+      </div>
+
+<div class="container-fluid">
+    <div class="col-md-5" >
+      <div id="incomeInput" class="question">
+        <p><strong>What is your monthly income?</strong></p>
+        <div class="col-md-2">
+        <input class="input-lg" ng-model="incomeValue" type="number" id="income">
+        </div>
+      <div>
+      <button>Submit</button>
+        </div>
+      </div></div>
+      <div class="col-md-6 dataChange">
+        <h3>Budgets should fit your lifestyle...</h3>
+        <p>Change it up, or add a category!</p>
+        <div ng-controller="mainCtrl" class="list">
+          <input type="checkbox"/>
+          <label ng-click="piechart()">Housing and Utilities</label>
+          <input type="text"/>
+          <input type="number" placeholder="34%"/>
+        </div>
+        <div class="actions" ng-controller-"otherCtrl">
+        <a href="" ng-click=" ">edit</a>
+        <a href="" ng-click="piechart()">save</a>
+        <a href="">delete</a>
+      </div>
+</div>
+
+    <div class="col-md-6">
+     <div piechart id="container" style="min-width: 320px; height: 400px; max-width: 600px; margin: 0 auto" data="chartData" select="selectRow(selectedRowIndex)"></div>
+    </div><!--End container class-->
+
+<!--Script Tags-->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+ <script src="http://www.google.com/uds/modules/gviz/gviz-api.js">
+ <script src="https://code.highcharts.com/highcharts.js"></script>
+ <script src="https://code.highcharts.com/modules/exporting.js"></script>
+ <script src="chart.js" type="text/javascript"></script>
+ <script src="app.js" type-"text/javascript"></script>
+ <script src="piechart.js" type="text/javascript"></script>
+
+
+    </body>
+</html>

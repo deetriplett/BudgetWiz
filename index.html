@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>budgetWIZ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="file:///C:/Users/Ashley/Desktop/Budget/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="file:///C:/Users/Ashley/Desktop/Budget/js/budget.js"></script>
+  <!-- <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="file:///C:/Users/Ashley/Desktop/Budget/js/chart.js"></script> -->
+  </head>
+
+  <body>
+  <nav class="navbar navbar-inverse"><!--NAVIGATION--->
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <span>  <img src="file:///C:/Users/Ashley/Desktop/Budget/img/budget-logo2.png" alt="budgetWIZ" class="img-responsive"> </span>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="file:///C:/Users/Ashley/Desktop/Budget/html/about.html">about</a></li>
+            <li><a href="file:///C:/Users/Ashley/Desktop/Budget/html/contact.html">contact</a></li>
+            <li><a href="file:///C:/Users/Ashley/Desktop/Budget/html/index.html">WIZQuiz</a></li>
+          </ul>
+      </div>
+    </nav>
+    <div class="container-fluid"><!--HEADER--->
+        <div class="jumbotron text-center">
+          <h1>Abracadabra!</h1>
+          <h2>Making a budget is hard. Let me make one for you!</h2>
+          </div>
+        </div>
+    <div class="col-md-12 text-center"><!--QUIZ BUTTON--->
+      <button type="button" class="btn btn-primary btn-lg">Take the Wiz Quiz!</button>
+        </div>
+    <div class="row">
+    <div class="container-fluid">
+      <div class="col-md-3"></div><!--FOR SPACING-->
+      <ul id="quiz" class="col-md-6 text-center">
+        <li id="question1" class="quiz-questions">
+          <p><strong>What is your monthy income?</strong></p>
+          <input type="number" id="income">
+            </li>
+        <li id="question2" class="quiz-questions">
+          <p><strong>How many people reside in your household?</strong></p>
+          <input type="number" id="householdSize"/>
+            </li>
+        <li id="question3" class="quiz-questions">
+          <p><strong>Do you have a lot of debt?</strong></p>
+          <input type="radio" name="debt" value="YES"> YES
+          <br>
+          <input type="radio" name="debt" value="NO"> NO
+            </li>
+        <li id="question4" class="quiz-questions">
+          <p><strong>Are you frugal or fancy?</strong></p>
+          <input type="radio" name="spending" value="Frugal"> Frugal
+          <br>
+          <input type="radio" name="spending" value="Fancy"> Fancy
+            </li>
+        <input type="submit" class="btn btn-info" value="Work your Magic, BudgetWiz!" onclick="$('#container');">
+      </ul>
+      </div>
+      <div class="col-md-3"></div><!--FOR SPACING-->
+    </div>
+      <div class="container-fluid">
+        <div class="row">
+        <div class="col-md-3"></div><!--QUIZ RESULTS-->
+        <form role="form" id="quizPrintOut">
+          <div class="col-md-6 well">
+            <h3>Presto Chango! You are now a Budgeting Wizard!</h3>
+            <div class="form-group">
+              <ul>
+                <li><label for="housing" id="housing"></label>Housing:</li><output></output>
+                <li><label for="transportation" id="car"></label>Transportation:</li><output></output>
+                <li><label for="food" id="food"></label>Food:</li><output></output>
+                <li><label for="healthcare" id="health">Healthcare:</label></li><output></output>
+                <li><label for="utilities" id="utilities"></label>Utilities:</li><output></output>
+                <li><label for="savings" id="save"></label>Savings:</li><output></output>
+                <li><label for="fun" id="fun"></label>Fun:</li><output></output>
+                <li><label for="debts" id="debt">Debts:</label></li><output></output>
+                <li><label for="other" id="other">Other:</label></li><output></output>
+              </ul> -->
+            </div> <!--End form-group class-->
+           </div> <!--End well class--->
+        </form>
+
+        <div class="col-md-3"></div> <!--End container class-->
+
+    </body>
+</html>
